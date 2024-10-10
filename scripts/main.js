@@ -1,0 +1,1 @@
+/* Common functions used across all pages */

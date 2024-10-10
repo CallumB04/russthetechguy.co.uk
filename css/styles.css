@@ -1,0 +1,5 @@
+/* Importing colors and fonts into stylesheet */
+@import url("colors.css");
+@import url("fonts.css");
+
+/* Common styles used across all pages */
