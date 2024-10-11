@@ -1,1 +1,6 @@
 /* Fonts used across all pages */
+
+@font-face {
+    font-family: Reforma;
+    src: url("../assets/fonts/Reforma2018-Gris.ttf");
+}
