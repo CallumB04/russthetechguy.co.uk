@@ -46,11 +46,11 @@ body {
     object-fit: cover;
 }
 
-#navbar-dropdown-button {
+#navbar-dropdown-wrapper {
     justify-content: end;
 }
 
-#navbar-dropdown-wrapper {
+#navbar-dropdown-button {
     display: flex;
     flex-direction: column;
     row-gap: 4px;
@@ -64,6 +64,6 @@ body {
     background-color: var(--bg-color);
 }
 
-#navbar-dropdown-wrapper:hover {
+#navbar-dropdown-button:hover {
     cursor: pointer;
 }
