@@ -2,11 +2,13 @@
 
 const navbarDropdownButton = document.getElementById("navbar-dropdown-button");
 const dropdownMenu = document.getElementById("dropdown-menu");
+const dropdownOptionsWrapper = document.getElementById("dropdown-options-wrapper");
 
 navbarDropdownButton.addEventListener("click", () => {
 
     if (dropdownMenu.classList.contains("hidden")) {
         dropdownMenu.classList.remove("hidden");
+        dropdownOptionsWrapper.style.display = "flex";
 
         // Landscape
         if (screen.width > screen.height) {
@@ -17,6 +19,8 @@ navbarDropdownButton.addEventListener("click", () => {
             dropdownMenu.style.animation = "0.2s fade-in linear";
         }
     } else {
+        dropdownOptionsWrapper.style.display = "none";
+        
         // Landscape
         if (screen.width > screen.height) {
             setTimeout(() => {dropdownMenu.classList.add("hidden")}, 90);
