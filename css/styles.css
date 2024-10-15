@@ -105,11 +105,16 @@ body {
     animation: 0.4s fade-in linear;
 }
 
+#dropdown-menu #dropdown-options-wrapper a {
+    text-decoration: none;
+}
+
 #dropdown-menu .dropdown-option {
     height: 42px;
     text-align: center;
     font-size: 1.2rem;
     padding: 6px;
+    color: var(--text-color);
 }
 
 #dropdown-menu .dropdown-option:hover {
