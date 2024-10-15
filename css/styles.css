@@ -89,6 +89,7 @@ body {
     content: "";
     width: 100%;
     height: 1px;
+    top: 0;
     background-color: black;
     position: absolute;
     filter:blur(0.3rem);
@@ -105,6 +106,7 @@ body {
 }
 
 #dropdown-menu .dropdown-option {
+    height: 42px;
     text-align: center;
     font-size: 1.2rem;
     padding: 6px;
@@ -113,6 +115,29 @@ body {
 #dropdown-menu .dropdown-option:hover {
     cursor: pointer;
     background-color: var(--mobile-dropdown-bg-color);
+    font-size: 1.25rem;
+    transition: font-size 0.1s;
+}
+
+#dropdown-menu #dropdown-socials-wrapper {
+    border-top: 1px solid var(--text-color);
+    margin: 0 auto;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+#dropdown-menu .socials {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+#dropdown-menu .socials:hover {
+    scale: 1.15;
+    transition: scale 0.1s;
 }
 
 #main {
