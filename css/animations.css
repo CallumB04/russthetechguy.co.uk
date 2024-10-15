@@ -17,7 +17,7 @@
     }
 }
 
-@keyframes mobile-dropdown-appear {
+@keyframes fade-in {
     from {
         opacity: 0;
     }
@@ -25,7 +25,7 @@
         opacity: 1;
     }
 }
-@keyframes mobile-dropdown-disappear {
+@keyframes fade-out {
     from {
         opacity: 1;
     }

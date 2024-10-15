@@ -14,7 +14,7 @@ navbarDropdownButton.addEventListener("click", () => {
         } 
         // Portait
         else {
-            dropdownMenu.style.animation = "0.2s mobile-dropdown-appear linear";
+            dropdownMenu.style.animation = "0.2s fade-in linear";
         }
     } else {
         // Landscape
@@ -25,7 +25,7 @@ navbarDropdownButton.addEventListener("click", () => {
         // Portait
         else {
             setTimeout(() => {dropdownMenu.classList.add("hidden")}, 190);
-            dropdownMenu.style.animation = "0.2s mobile-dropdown-disappear linear";
+            dropdownMenu.style.animation = "0.2s fade-out linear";
         }
     }
 })
