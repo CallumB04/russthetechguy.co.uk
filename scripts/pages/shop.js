@@ -1,0 +1,1 @@
+/* Functions specifically for the shop page (shop.html) */

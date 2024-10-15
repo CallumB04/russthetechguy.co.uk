@@ -1,0 +1,1 @@
+/* Functions specifically for the pricing page (pricing.html) */

@@ -1,7 +1,7 @@
 /* Importing colors and fonts into stylesheet */
-@import url("colors.css");
-@import url("fonts.css");
-@import url("animations.css");
+@import url("util/colors.css");
+@import url("util/fonts.css");
+@import url("util/animations.css");
 
 /* Common styles used across all pages */
 
