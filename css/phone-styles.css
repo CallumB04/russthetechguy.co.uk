@@ -1,0 +1,14 @@
+/* Styling for mobile devices, where aspect ratio is < 1 */
+
+@media (orientation: portrait) {
+    #dropdown-menu {
+        top: 70px;
+        left: 0;
+        width: 100vw;
+        height: calc(100vh - 70px);
+        background-color: var(--mobile-dropdown-bg-color);
+    }
+    #dropdown-menu::after {
+        display:none;
+    }
+}

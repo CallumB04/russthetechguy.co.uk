@@ -1,0 +1,35 @@
+/* Animations used throughout the code */
+
+@keyframes dropdown-appear {
+    from {
+        height: 0;
+    }
+    to {
+        height: 340px;
+    }
+}
+@keyframes dropdown-disappear {
+    from {
+        height: 340px;
+    }
+    to {
+        height: 0;
+    }
+}
+
+@keyframes mobile-dropdown-appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes mobile-dropdown-disappear {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
