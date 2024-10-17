@@ -156,7 +156,7 @@ body {
 
 #footer {
     width: 100%;
-    min-height: 350px;
+    min-height: 320px;
     background-color: var(--footer-color);
     padding: 30px 2vw;
 
@@ -168,7 +168,7 @@ body {
 
 .footer-section {
     width: 275px;
-    height: 290px;
+    height: 270px;
     padding: 5px 15px;
 }
 
