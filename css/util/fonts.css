@@ -4,3 +4,7 @@
     font-family: Reforma;
     src: url("../../assets/fonts/Reforma2018-Gris.ttf");
 }
+@font-face {
+    font-family: Reforma-Blanca;
+    src: url("../../assets/fonts/Reforma2018-Blanca.ttf");
+}
