@@ -11,7 +11,7 @@ navbarDropdownButton.addEventListener("click", () => {
         dropdownOptionsWrapper.style.display = "flex";
 
         // Landscape
-        if (screen.width > screen.height) {
+        if (window.matchMedia("(orientation: landscape)").matches) {
             dropdownMenu.style.animation = "0.1s dropdown-appear linear";
         } 
         // Portait
@@ -22,7 +22,7 @@ navbarDropdownButton.addEventListener("click", () => {
         dropdownOptionsWrapper.style.display = "none";
         
         // Landscape
-        if (screen.width > screen.height) {
+        if (window.matchMedia("(orientation: landscape)").matches) {
             setTimeout(() => {dropdownMenu.classList.add("hidden")}, 90);
             dropdownMenu.style.animation = "0.1s dropdown-disappear linear";
         }
