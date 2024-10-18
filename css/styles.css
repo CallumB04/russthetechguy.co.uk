@@ -18,6 +18,14 @@ body {
     font-family: Reforma;
 }
 
+::-webkit-scrollbar {
+    width: 14px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-color);
+}
+
 .hidden {
     display: none;
 }
