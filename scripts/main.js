@@ -89,3 +89,24 @@ navbarDropdownButton.addEventListener("click", () => {
         closeDropdownMenu();
     }
 })
+
+// check if mouse if hovered on dropdown button or m
+dropdownMenu.addEventListener("mouseover", 
+    () => dropdownMenu.dataset.isHovered = "1");
+dropdownMenu.addEventListener("mouseout", 
+    () => dropdownMenu.dataset.isHovered = "0");
+navbarDropdownButton.addEventListener("mouseover", 
+    () => navbarDropdownButton.dataset.isHovered = "1");
+navbarDropdownButton.addEventListener("mouseout", 
+    () => navbarDropdownButton.dataset.isHovered = "0");
+
+// close dropdown menu when click elsewhere on screen
+body.addEventListener("click", () => {
+    if (dropdownMenu.dataset.isHovered === "0" 
+        && navbarDropdownButton.dataset.isHovered === "0"
+        && navbarDropdownButton.dataset.isMidAnimation === "0"
+        && !dropdownMenu.classList.contains("hidden")) {
+        dropdownButtonAnimationClose();
+        closeDropdownMenu();
+    }
+})
