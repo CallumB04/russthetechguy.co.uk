@@ -15,6 +15,22 @@
 
 /* Landscape on mobile devices */
 @media (orientation: landscape) and (max-height: 600px) {
+    @keyframes dropdown-appear {
+        from {
+            height: 0;
+        }
+        to {
+            height: 60vh;
+        }
+    }
+    @keyframes dropdown-disappear {
+        from {
+            height: 60vh;
+        }
+        to {
+            height: 0;
+        }
+    }
     #dropdown-menu {
         height: 60vh;
     }
