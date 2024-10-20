@@ -10,6 +10,22 @@ const dropdownShapeBottom = document.getElementById("dropdown-shape-bottom");
 const dropdownMenu = document.getElementById("dropdown-menu");
 const dropdownOptionsWrapper = document.getElementById("dropdown-options-wrapper");
 
+const dropdownButtonAnimationOpen = () => {
+    dropdownShapeTop.style.transform = "translateY(6px)";
+    dropdownShapeBottom.style.transform = "translateY(-6px)";
+    setTimeout(() => dropdownShapeMiddle.style.transform = "rotate(45deg)", 250);
+    setTimeout(() => dropdownShapeTop.style.transform += "rotate(-45deg)", 250);
+    setTimeout(() => dropdownShapeBottom.style.transform += "rotate(-45deg)", 250);
+}
+
+const dropdownButtonAnimationClose = () => {
+    dropdownShapeMiddle.style.transform = "rotate(0deg)";
+    dropdownShapeTop.style.transform += "rotate(45deg)";
+    dropdownShapeBottom.style.transform += "rotate(45deg) ";
+    setTimeout(() => {dropdownShapeTop.style.transform = ""}, 250);
+    setTimeout(() => {dropdownShapeBottom.style.transform = ""}, 250);
+}
+
 navbarDropdownButton.addEventListener("click", () => {
 
     // ensure dropdown button cannot be pressed mid animation
@@ -25,11 +41,7 @@ navbarDropdownButton.addEventListener("click", () => {
     if (dropdownMenu.classList.contains("hidden")) {
 
         // animate dropdown shape
-        dropdownShapeTop.style.transform = "translateY(6px)";
-        dropdownShapeBottom.style.transform = "translateY(-6px)";
-        setTimeout(() => dropdownShapeMiddle.style.transform = "rotate(45deg)", 250);
-        setTimeout(() => dropdownShapeTop.style.transform += "rotate(-45deg)", 250);
-        setTimeout(() => dropdownShapeBottom.style.transform += "rotate(-45deg)", 250);
+        dropdownButtonAnimationOpen();
 
         dropdownMenu.classList.remove("hidden");
         dropdownOptionsWrapper.style.display = "flex";
@@ -46,12 +58,7 @@ navbarDropdownButton.addEventListener("click", () => {
     } else {
 
         // animate dropdown shape
-        dropdownShapeMiddle.style.transform = "rotate(0deg)";
-        dropdownShapeTop.style.transform += "rotate(45deg)";
-        dropdownShapeBottom.style.transform += "rotate(45deg) ";
-        setTimeout(() => {dropdownShapeTop.style.transform = ""}, 250);
-        setTimeout(() => {dropdownShapeBottom.style.transform = ""}, 250);
-        
+        dropdownButtonAnimationClose();
 
         dropdownOptionsWrapper.style.display = "none";
         
