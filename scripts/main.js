@@ -12,6 +12,15 @@ const dropdownOptionsWrapper = document.getElementById("dropdown-options-wrapper
 
 navbarDropdownButton.addEventListener("click", () => {
 
+    // ensure dropdown button cannot be pressed mid animation
+    if (navbarDropdownButton.dataset.isMidAnimation === "1") {
+        return;
+    }
+
+    // set animation as active, button loses functionality until animation ends
+    navbarDropdownButton.dataset.isMidAnimation = "1";
+    setTimeout(() => navbarDropdownButton.dataset.isMidAnimation = "0", 250);
+
     // display dropdown menu
     if (dropdownMenu.classList.contains("hidden")) {
 
