@@ -95,6 +95,7 @@ body {
     width: calc(10vw + 200px);
     height: 340px;
     background-color: var(--highlight-color-dark);
+    border-bottom-left-radius: 10px;
 }
 
 #dropdown-menu::after {
