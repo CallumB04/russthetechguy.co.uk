@@ -80,6 +80,7 @@ body {
     width: 20px;
     height: 2px;
     background-color: var(--text-color);
+    transition: transform 250ms;
 }
 
 #navbar-dropdown-button:hover {
