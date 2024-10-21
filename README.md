@@ -1,6 +1,6 @@
 # [russthetechguy.co.uk](https://russthetechguy.co.uk)
 
-This is a website being constructured for the commercial use of the 'Russ the Tech Guy' business. A repair technician business based in the South-east of The United Kingdom.
+This is a website being constructed for the commercial use of the 'Russ the Tech Guy' business. A repair technician business based in the South-east of The United Kingdom.
 
 ### Business Socials
 - [Facebook Page](https://www.facebook.com/Russtherepairguy)
