@@ -2,6 +2,8 @@
 
 const body = document.getElementById("body");
 
+const navbarLogo = document.getElementById("navbar-logo");
+
 const navbarDropdownButton = document.getElementById("navbar-dropdown-button");
 const dropdownShapeTop = document.getElementById("dropdown-shape-top");
 const dropdownShapeMiddle = document.getElementById("dropdown-shape-middle");
@@ -109,4 +111,8 @@ body.addEventListener("click", () => {
         dropdownButtonAnimationClose();
         closeDropdownMenu();
     }
+})
+
+navbarLogo.addEventListener("click", () => {
+    window.location = "../index.html";
 })

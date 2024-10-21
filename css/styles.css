@@ -64,6 +64,10 @@ body {
     object-fit: cover;
 }
 
+#navbar-logo:hover {
+    cursor: pointer;
+}
+
 #navbar-dropdown-wrapper {
     justify-content: end;
 }
