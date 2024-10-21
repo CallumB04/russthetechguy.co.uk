@@ -18,3 +18,14 @@
     font-family: Reforma-blanca;
     font-style: italic;
 }
+
+#opening-section p {
+    margin-top: 10px;
+    padding-top: 10px;
+    width: 70ch;
+    max-width: 80vw;
+    text-align: center;
+    font-family: Reforma-blanca;
+    font-size: calc(1vw + 0.4rem);
+    border-top: 1px solid var(--text-color);
+}
