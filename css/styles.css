@@ -89,8 +89,6 @@ body {
 
 #navbar-dropdown-button:hover {
     cursor: pointer;
-    background-color: var(--highlight-color-dark);
-    border-radius: 55%;
 }
 
 #dropdown-menu {
