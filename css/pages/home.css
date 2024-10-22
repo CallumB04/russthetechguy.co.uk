@@ -29,7 +29,7 @@
 #opening-section h2 {
     font-size: calc(1.5vw + 0.7rem);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-top: 5px;
+    font-weight: 100;
 }
 
 #opening-section p {
