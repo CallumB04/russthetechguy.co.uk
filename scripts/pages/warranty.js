@@ -1,0 +1,1 @@
+/* Functions specifically for the warranty page (warranty.html) */

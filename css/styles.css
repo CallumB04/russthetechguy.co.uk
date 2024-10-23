@@ -181,7 +181,7 @@ body {
 .footer-section {
     width: 275px;
     min-height: 200px;
-    padding: 5px 15px;
+    padding: 10px 15px 30px 15px;
 }
 
 .footer-section-header {
@@ -196,7 +196,7 @@ body {
 .footer-section-content {
     padding-top: 15px;
     padding-left: 3px;
-    text-align: center;;
+    text-align: center;
 
     display: flex;
     flex-direction: column;
