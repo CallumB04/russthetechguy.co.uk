@@ -1,0 +1,1 @@
+/* Functions specifically for the privacy page (privacy.html) */
