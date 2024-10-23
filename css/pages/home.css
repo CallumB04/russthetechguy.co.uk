@@ -77,7 +77,20 @@
 #reviews-section .review h3 {
     color: var(--mobile-dropdown-bg-color);
     font-size: 1.55rem;
-    text-align: center;
+    margin: 0 auto;
+    width: max-content;
+    transition: scale 250ms;
+}
+
+#reviews-section .review a {
+    color: var(--mobile-dropdown-bg-color);
+    text-decoration: none;
+    width: max-content;
+}
+
+#reviews-section .review h3:hover {
+    cursor: pointer;
+    scale: 1.1;
 }
 
 #reviews-section .review p {
