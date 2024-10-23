@@ -45,7 +45,7 @@
 }
 
 #reviews-section {
-    background-image: linear-gradient(to bottom right, var(--bg-color), var(--bg-color-dark));
+    background: var(--bg-gradient);
     padding-top: 60px;
     padding-bottom: 80px;
 }
