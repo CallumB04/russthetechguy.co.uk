@@ -44,6 +44,34 @@
     border-top: 1px solid var(--text-color);
 }
 
+#reviews-section {
+    background-color: var(--bg-color);
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+#reviews-section h2 {
+    text-align: center;
+    font-size: calc(1.8vw + 1.4rem);
+}
+
+#reviews-section #reviews-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 40px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#reviews-section .review {
+    border: 1px solid var(--text-color);
+    border-radius: 8px;
+    max-width: 90vw;
+}
 
 @media (orientation: portrait) {
     #opening-section {
