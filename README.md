@@ -4,9 +4,9 @@ This is a website being constructed for the commercial use of the 'Russ the Tech
 
 ## URL's
 [russthetechguy.co.uk](https://russthetechguy.co.uk) *Host domain*<br>
-[russthetechguy.com](https://russthetechguy.com) *(redirects)*<br>
-[russthetechguy.info](https://russthetechguy.info) *(redirects)*<br>
-[russthetechguy.store](https://russthetechguy.store) *(redirects)*
+[russthetechguy.com](http://russthetechguy.com) *(redirects)*<br>
+[russthetechguy.info](http://russthetechguy.info) *(redirects)*<br>
+[russthetechguy.store](http://russthetechguy.store) *(redirects)*
 
 ## Business Socials
 - [Facebook Page](https://www.facebook.com/Russtherepairguy)
