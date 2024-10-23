@@ -70,7 +70,9 @@
 #reviews-section .review {
     border: 1px solid var(--text-color);
     border-radius: 8px;
-    max-width: 90vw;
+    max-width: 85vw;
+    width: 350px;
+    aspect-ratio: 1.15;
 }
 
 @media (orientation: portrait) {
