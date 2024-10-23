@@ -1,1 +1,1 @@
-/* Functions specifically for the home page (index.html) */
+/* Functions specifically for the home page (home.html) */

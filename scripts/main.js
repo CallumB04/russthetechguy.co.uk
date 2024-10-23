@@ -114,5 +114,5 @@ body.addEventListener("click", () => {
 })
 
 navbarLogo.addEventListener("click", () => {
-    window.location = "../index.html";
+    window.location = "../home.html";
 })
