@@ -55,10 +55,33 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
+    z-index: 2;
 }
 
 #pricelist-section #pricelist .pricelist-item h2 {
-    font-size: calc(1.2vw + 1.4rem);
+    font-size: calc(0.7vw + 1.1rem);
+    text-align: center;
+    padding: calc(0.3vw + 4px) calc(0.5vw + 5px);
+    margin-top: calc(0.8vw + 10px);
+    background-color: var(--bg-color);
+    border-radius: 5vw;
+    position: relative;
+}
+
+#pricelist-section #pricelist .pricelist-item h2::before {
+    content: "";
+    background: conic-gradient(from 0deg, var(--highlight-color) 10%, #a6c4d3 , var(--highlight-color));
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    translate: -50% -50.5%;
+    padding: calc(0.1vw + 3px);
+    border-radius: 5vw;
+    z-index: -1;
 }
 
 #pricelist-section #pricelist .pricelist-item .pricelist-item-image {
@@ -66,13 +89,21 @@
     opacity: 1;
 
     position: absolute;
+    top: 0;
     width: 100%;
-    height: 83%;
+    height: 100%;
     border-radius: 0 0 5% 5%;
 }
 
 #pricelist-section #pricelist .pricelist-item .pricelist-item-image:hover {
     opacity: 0;
+}
+
+#pricelist-section #pricelist .pricelist-item .pricelist-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5% 5% 5% 5%;
 }
 
 #pricelist-section #pricelist .pricelist-item .pricelist-item-content {
