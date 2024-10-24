@@ -115,12 +115,12 @@
 }
 
 #pricelist-section #pricelist .pricelist-item .pricelist-item-content ul {
-    padding-left: 25px;
+    padding: 20px 25px;
     height: 85%;
     
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     border-bottom: 1px solid var(--text-color);
 }
 
@@ -128,12 +128,17 @@
     font-size: calc(0.3vw + 0.75rem);
 }
 
+#pricelist-section #pricelist .pricelist-item .pricelist-item-content .asterisk {
+    font-weight: bold;
+    font-size: calc(0.3vw + 0.9rem);
+}
+
 #pricelist-section #pricelist .pricelist-item .pricelist-item-content div {
     width: 100%;
     display: flex;
     justify-content: center;
     gap: calc(1vw + 0.75rem);
-    padding-top: calc(0.4vw + 10px);
+    padding-top: calc(0.4vw + 8px);
 }
 
 #pricelist-section #pricelist .pricelist-item .pricelist-item-content p {
