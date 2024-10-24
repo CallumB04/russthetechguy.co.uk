@@ -153,4 +153,31 @@
         max-width: 80vw;
         gap: 50px;
     }
+    #pricelist-section #pricelist .pricelist-item {
+        width: calc(8vw + 325px);
+        height: calc(8vw + 325px);
+    }    
+    #pricelist-section #pricelist .pricelist-item h2 {
+        font-size: calc(0.6vw + 1rem);
+    }
+    #pricelist-section #pricelist .pricelist-item h2::before {
+        translate: -50% -50%;
+        padding: calc(0.1vw + 3px);
+    }
+    #pricelist-section #pricelist .pricelist-item .pricelist-item-content ul {
+        padding: 10px 25px 20px 25px;
+    }
+    #pricelist-section #pricelist .pricelist-item .pricelist-item-content li {
+        font-size: calc(0.3vw + 0.95rem);
+    }
+    #pricelist-section #pricelist .pricelist-item .pricelist-item-content .asterisk {
+        font-size: calc(0.3vw + 1.05rem);
+    }
+    #pricelist-section #pricelist .pricelist-item .pricelist-item-content div {
+        gap: calc(1vw + 1.15rem);
+        padding-top: calc(0.4vw + 14px);
+    }
+    #pricelist-section #pricelist .pricelist-item .pricelist-item-content p {
+        font-size: calc(0.4vw + 0.9rem);
+    }
 }
