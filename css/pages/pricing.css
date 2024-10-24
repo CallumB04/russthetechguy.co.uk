@@ -25,12 +25,12 @@
     width: calc(8vw + 250px);
     height: calc(8vw + 250px);
     border-radius: 5%;
-    background: var(--bg-gradient);
+    background: var(--bg-color);
 }
 
 #pricelist-section #pricelist .pricelist-item::before {
     content: "";
-    background: conic-gradient(from 0deg, var(--highlight-color) 10%, #94b0be , var(--highlight-color));
+    background: conic-gradient(from 0deg, var(--highlight-color) 10%, #a6c4d3 , var(--highlight-color));
     position: absolute;
     top: 50%;
     left: 50%;
@@ -40,8 +40,6 @@
     padding: 7px;
     border-radius: 6%;
     z-index: -1;
-    
-
 }
 
 @media (orientation: portrait) {
