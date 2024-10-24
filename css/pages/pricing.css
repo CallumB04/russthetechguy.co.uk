@@ -6,7 +6,14 @@
 
 #pricelist-section h1 {
     text-align: center;
-    font-size: calc(1.8vw + 1.4rem);
+    font-size: calc(1.6vw + 1.7rem);
+}
+
+#pricelist-section p {
+    font-family: Reforma-blanca;
+    text-align: center;
+    font-size: calc(0.6vw + 0.7rem);
+    font-style: italic;
 }
 
 #pricelist-section #pricelist {
@@ -37,9 +44,39 @@
     width: 100%;
     height: 100%;
     translate: -50% -50%;
-    padding: 7px;
+    padding: 6px;
     border-radius: 6%;
     z-index: -1;
+}
+
+#pricelist-section #pricelist .pricelist-item .pricelist-item-header {
+    height: 17%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pricelist-section #pricelist .pricelist-item h2 {
+    font-size: calc(1.2vw + 1.4rem);
+}
+
+#pricelist-section #pricelist .pricelist-item .pricelist-item-image {
+    transition: opacity 0.5s;
+    opacity: 1;
+
+    position: absolute;
+    width: 100%;
+    height: 83%;
+    border-radius: 0 0 5% 5%;
+}
+
+#pricelist-section #pricelist .pricelist-item .pricelist-item-image:hover {
+    opacity: 0;
+}
+
+#pricelist-section #pricelist .pricelist-item .pricelist-item-content {
+
 }
 
 @media (orientation: portrait) {
