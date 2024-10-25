@@ -1,1 +1,25 @@
 /* Styles specifically for the gallery page (gallery.html) */
+
+#header {
+    padding-top: 40px;
+    text-align: center;
+    font-size: calc(1.6vw + 1.7rem);
+}
+
+#gallery-section {
+    width: 100%;
+    height: 100%;
+    padding: 60px calc(1vw + 10px) 100px calc(1vw + 10px);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.image-wrapper {
+    border: 1px solid black;
+    width: 320px;
+    max-width: 85vw;
+    aspect-ratio: 1.2;
+}
