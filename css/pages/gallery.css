@@ -28,13 +28,14 @@
 }
 
 .gallery-image {
-    max-height: 200px;
+    max-height: 325px;
     max-width: 85vw;
     border-radius: 5%;
 }
 
 @media (orientation: portrait) {
     .gallery-image {
-        max-height: 250px;
+       max-height: 9999px;
+       max-width: min(80vw, 420px);
     }
 }
