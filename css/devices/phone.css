@@ -11,6 +11,24 @@
     #dropdown-menu::after {
         display:none;
     }
+    #dropdown-menu #dropdown-options-wrapper {
+        row-gap: 6.5%;
+        padding-top: 40px;
+    }
+    #dropdown-menu .dropdown-option {
+        font-size: 1.9rem;
+        height: 50px;
+        padding: 2px;
+    }
+    #dropdown-menu .dropdown-option:hover {
+        font-size: 2rem;
+    }
+    #dropdown-menu #dropdown-socials-wrapper {
+        column-gap: 40px;
+    }
+    #dropdown-menu .socials {
+        font-size: 2.2rem;
+    }
 }
 
 /* Landscape on mobile devices */
