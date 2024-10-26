@@ -1,1 +1,40 @@
 /* Styles specifically for the gallery page (gallery.html) */
+
+#header {
+    padding-top: 40px;
+    text-align: center;
+    font-size: calc(1.6vw + 1.7rem);
+}
+
+#description {
+    font-family: "League Spartan";
+    text-align: center;
+    font-size: calc(0.6vw + 0.7rem);
+    font-style: italic;
+    max-width: min(70vw, 45ch);
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+#gallery-section {
+    width: 100%;
+    height: 100%;
+    padding: 60px calc(1vw + 10px) 100px calc(1vw + 10px);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.gallery-image {
+    max-height: 200px;
+    max-width: 85vw;
+    border-radius: 5%;
+}
+
+@media (orientation: portrait) {
+    .gallery-image {
+        max-height: 250px;
+    }
+}
