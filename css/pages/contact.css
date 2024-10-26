@@ -1,1 +1,17 @@
 /* Styles specifically for the contact page (contact.html) */
+
+#header {
+    padding-top: 40px;
+    text-align: center;
+    font-size: calc(1.6vw + 1.7rem);
+}
+
+#description {
+    font-family: "League Spartan";
+    text-align: center;
+    font-size: calc(0.6vw + 0.7rem);
+    font-style: italic;
+    max-width: min(70vw, 45ch);
+    margin: 0 auto;
+    padding-top: 10px;
+}
