@@ -19,8 +19,8 @@
 #contact-form {
     width: calc(70% + 150px);
     max-width: 90vw;
-    margin: 30px auto;
-    padding: 40px 4%;
+    margin: 70px auto;
+    padding: 0 4%;
     border-radius: 12px;
 
     display: flex;
@@ -68,10 +68,10 @@
 }
 
 #send-button {
-    width: 15%;
+    width: 25%;
     height: 60px;
     margin: 70px auto 0 auto;
-    font-size: calc(0.2vw + 1.2rem);
+    font-size: calc(0.12vw + 1.5rem);
     font-style: italic;
     background-color: var(--highlight-color);
     border: none;
@@ -79,7 +79,7 @@
     font-family: Lato;
     position: relative;
     text-align: center;
-    padding-top: 16px;
+    padding-top: 15px;
     transition: background-color 0.5s;
 }
 
@@ -110,14 +110,17 @@
 }
 
 @media (orientation: portrait) and (max-width: 650px) {
+    #contact-form {
+        margin: 40px auto 70px auto;
+    }
     #form-wrapper-left, #form-wrapper-right {
-        width: 82%;
+        width: 100%;
     }
     #reasoning-input {
         margin-top: 0;
     }
     #send-button {
-        width: 82%;
+        width: 100%;
         margin: 30px auto 0 auto;
     }
 }
