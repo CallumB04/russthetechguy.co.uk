@@ -8,6 +8,9 @@ const messageInput = document.getElementById("message-input");
 
 const sendBtn = document.getElementById("send-button");
 
+// function to capitalise first letter of a string
+const capitalize = (value) => String(value[0]).toUpperCase() + String(value).slice(1);
+
 sendBtn.addEventListener("click", 
     () => {
         
@@ -22,6 +25,27 @@ sendBtn.addEventListener("click",
         // ensuring no required inputs are empty
         if (requiredInputValues.every(value => value !== "")) {
 
+            // Subject for the automated Email
+            let emailSubject = `
+                Website form - 
+                ${capitalize(firstNameInput.value)} ${capitalize(lastNameInput.value)} - 
+                ${reasoningInput.value !== "other" ? capitalize(reasoningInput.value) : "Unknown"} Inquiry
+            `;
+
+            // Body for the automated Email.
+            // Contains all the info provided by the user, in a professional structure.
+            let emailBody = ``;
+
+            // Create email with given subject and body, and open in a new tab
+            // Use regex to prevent: more than one space at a time; space at start of subject
+            window.open(
+                `mailto:plumbbusiness101@gmail.com?subject=${
+                    emailSubject
+                    .replace(/\s+/g, " ")
+                    .replace(/^\s/, "")
+                }&body=${emailBody}`
+                , "_blank"
+            );
         } 
         
         // if required input is empty, alert user
