@@ -55,22 +55,26 @@
         </p>
 
         <div id="contact-form">
-            <div id="form-wrapper-left">
-                <input type="text" class="form-input" id="fname-input" placeholder="First name*" required/>
-                <input type="text" class="form-input" id="lname-input" placeholder="Last name*" required/>
-                <input type="number" class="form-input" id="phone-input" placeholder="Phone number (optional)"/>
+            <div id="form-wrapper">
+                <div id="form-wrapper-left">
+                    <input type="text" class="form-input" id="fname-input" placeholder="First name*" required/>
+                    <input type="text" class="form-input" id="lname-input" placeholder="Last name*" required/>
+                    <input type="number" class="form-input" id="phone-input" placeholder="Phone number (optional)"/>
 
-                <select class="form-input" id="reasoning-input" required>
-                    <option value="" disabled>-- Please select your contact reasoning --</option>
-                    <option value="repair">Repair</option>
-                    <option value="return-or-refund">Return / Refund</option>
-                    <option value="warranty">Warranty</option>
-                    <option value="other">Other (please specify in message)</option>
-                </select>
+                    <select class="form-input" id="reasoning-input" required>
+                        <option value="" disabled>-- Please select your contact reasoning --</option>
+                        <option value="repair">Repair</option>
+                        <option value="return-or-refund">Return / Refund</option>
+                        <option value="warranty">Warranty</option>
+                        <option value="other">Other (please specify in message)</option>
+                    </select>
+                </div>
+                <div id="form-wrapper-right">
+                    <textarea type="text" class="form-input" id="message-input" placeholder="Your message..." required></textarea>
+                </div>
             </div>
-            <div id="form-wrapper-right">
-                <textarea type="text" class="form-input" id="message-input" placeholder="Your message..." required></textarea>
-            </div>
+
+            <div id="send-button">Send</div>
         </div>
     </main>
 
