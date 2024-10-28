@@ -96,8 +96,16 @@
 #send-button::before {
     top: 50%;
     left: 50%;
-    background: conic-gradient(from var(--angle), var(--text-color) 8%, transparent 8%);
-    padding: 3px;
+    background: conic-gradient(
+        from var(--angle),
+        var(--text-color) 2%,
+        transparent 2%,
+        transparent 52%,
+        var(--text-color) 52%,
+        var(--text-color) 54%,
+        transparent 54% 
+        );
+    padding: 4px;
     animation: 4s spin linear infinite;
     opacity: 0;
     transition: opacity 1s;
