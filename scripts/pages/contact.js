@@ -15,15 +15,27 @@ sendBtn.addEventListener("click",
     () => {
         
         // Array for all inputs that need an entered value
-        let requiredInputValues = [
-            firstNameInput.value, 
-            lastNameInput.value, 
-            reasoningInput.value, 
-            messageInput.value
+        let requiredInputFields = [
+            firstNameInput, 
+            lastNameInput, 
+            reasoningInput, 
+            messageInput
         ];
 
+        // reset all input field styling values
+        requiredInputFields.forEach(
+            (inputField) => {
+                inputField.style.border = "1px solid black";
+            }
+        )
+
+        // array for all required inputs that are empty 
+        let emptyRequiredInputs = requiredInputFields.filter(
+            (inputField) => inputField.value === ""
+        ); 
+            
         // ensuring no required inputs are empty
-        if (requiredInputValues.every(value => value !== "")) {
+        if (emptyRequiredInputs.length === 0) {
 
             // storing capitalised names together, since its used in subject and body
             let fullName = `${capitalize(firstNameInput.value)} ${capitalize(lastNameInput.value)}`;
@@ -70,8 +82,14 @@ sendBtn.addEventListener("click",
             );
         } 
         
-        // if required input is empty, alert user
+        // notify user of all empty required input fields
         else {
+            emptyRequiredInputs.forEach(
+                (inputField) => {
+                    inputField.style.border = "2px solid #ff3131";
+                }
+            );
+
             alert("Please fill in all required input fields!");
         }
 });
