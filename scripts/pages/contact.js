@@ -1,5 +1,7 @@
 /* Functions specifically for the contact page (contact.html) */
 
+const emptyFieldsWarning = document.getElementById("empty-fields-warning");
+
 const firstNameInput = document.getElementById("fname-input");
 const lastNameInput = document.getElementById("lname-input");
 const phoneNumberInput = document.getElementById("phone-input");
@@ -10,6 +12,12 @@ const sendBtn = document.getElementById("send-button");
 
 // function to capitalise first letter of a string
 const capitalize = (value) => String(value[0]).toUpperCase() + String(value).slice(1);
+
+// function to get offset of element respective to the page
+const getVerticalOffset = (element) => {
+    let rect = element.getBoundingClientRect();
+    return rect.top + window.scrollY;
+};
 
 sendBtn.addEventListener("click", 
     () => {
@@ -28,6 +36,9 @@ sendBtn.addEventListener("click",
                 inputField.style.border = "1px solid black";
             }
         )
+
+        // hiding empty fields warning incase contact form is now viable
+        emptyFieldsWarning.style.display = "none";
 
         // array for all required inputs that are empty 
         let emptyRequiredInputs = requiredInputFields.filter(
@@ -82,14 +93,15 @@ sendBtn.addEventListener("click",
             );
         } 
         
-        // notify user of all empty required input fields
+        // notify user of all empty required input fields and display warning
         else {
             emptyRequiredInputs.forEach(
                 (inputField) => {
-                    inputField.style.border = "2px solid #ff3131";
+                    inputField.style.border = "1px solid #ff3131";
                 }
             );
 
-            alert("Please fill in all required input fields!");
+            emptyFieldsWarning.style.display = "block";
+            window.scroll(0, getVerticalOffset(emptyFieldsWarning) - 75); // scrolling warning into view
         }
 });

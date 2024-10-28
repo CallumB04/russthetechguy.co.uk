@@ -1,5 +1,9 @@
 /* Styles specifically for the contact page (contact.html) */
 
+:root {
+    --warning-color: #aa2626;
+}
+
 #header {
     padding-top: 40px;
     text-align: center;
@@ -14,6 +18,43 @@
     max-width: min(70vw, 45ch);
     margin: 0 auto;
     padding-top: 10px;
+}
+
+#empty-fields-warning {
+    width: 85%;
+    max-width: 500px;
+    height: 45px;
+    margin: 0 auto;
+    position: relative;
+    display: none;
+}
+
+#caution-symbol-wrapper, #text-wrapper {
+    border: 2px solid var(--warning-color);
+    height: calc(0.6vw + 55px);
+    position: absolute;
+    top: calc(0.6vw + 10px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--warning-color);
+}
+
+#caution-symbol-wrapper {
+    width: calc(20% - 1.5vw);
+    border-radius: 8px 0 0 8px;
+    font-size: calc(0.34vw + 1.3rem);
+}
+
+#text-wrapper {
+    width: 82%;
+    left: calc(20% - 1.5vw);
+    border-left: none;
+    border-radius: 0 8px 8px 0;
+    font-size: calc(0.35vw + 0.75rem);
+    font-style: italic;
 }
 
 #contact-form {
@@ -131,6 +172,10 @@
 
 
 @media (orientation: portrait) and (max-width: 650px) {
+    #empty-fields-warning {
+        margin-top: 10px;
+        margin-bottom: 55px;
+    }
     #contact-form {
         margin: 40px auto 70px auto;
     }
