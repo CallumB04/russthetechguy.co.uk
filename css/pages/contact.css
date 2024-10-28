@@ -72,32 +72,43 @@
     height: 60px;
     margin: 70px auto 0 auto;
     font-size: calc(0.12vw + 1.5rem);
-    font-style: italic;
     background-color: var(--highlight-color);
     border: none;
     border-radius: 12px;
-    font-family: Lato;
+    font-family: "League spartan";
+    text-transform: uppercase;
+    font-weight: bold;
     position: relative;
     text-align: center;
-    padding-top: 15px;
+    padding-top: calc(22px - 0.25vw);
     transition: background-color 0.5s;
 }
 
-#send-button::before {
+#send-button::before, #send-button::after {
     content: "";
     position: absolute;
     height: 100%;
     width: 100%;
-    background: conic-gradient(from var(--angle), var(--text-color) 8%, var(--bg-color) 8%);
+    translate: -50% -50%;
+    border-radius: 14px;
+}
+
+#send-button::before {
     top: 50%;
     left: 50%;
-    translate: -50% -50%;
-    z-index: -1;
+    background: conic-gradient(from var(--angle), var(--text-color) 8%, transparent 8%);
     padding: 3px;
-    border-radius: 14px;
     animation: 4s spin linear infinite;
     opacity: 0;
     transition: opacity 1s;
+    z-index: -1;
+}
+
+#send-button::after {
+    top: 57%;
+    left: 51.25%;
+    background-color: var(--mobile-dropdown-bg-color);
+    z-index: -2;
 }
 
 #send-button:hover {
@@ -108,6 +119,8 @@
 #send-button:hover::before {
     opacity: 1;
 }
+
+
 
 @media (orientation: portrait) and (max-width: 650px) {
     #contact-form {
