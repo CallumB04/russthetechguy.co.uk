@@ -34,6 +34,7 @@ sendBtn.addEventListener("click",
         requiredInputFields.forEach(
             (inputField) => {
                 inputField.style.border = "1px solid black";
+                inputField.style.backgroundColor = "white";
             }
         )
 
@@ -103,6 +104,7 @@ sendBtn.addEventListener("click",
             emptyRequiredInputs.forEach(
                 (inputField) => {
                     inputField.style.border = "2px solid #ff3131";
+                    inputField.style.backgroundColor = "#fff3f3";
                 }
             );
 
