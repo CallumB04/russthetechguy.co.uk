@@ -34,6 +34,7 @@ sendBtn.addEventListener("click",
         requiredInputFields.forEach(
             (inputField) => {
                 inputField.style.border = "1px solid black";
+                inputField.style.backgroundColor = "white";
             }
         )
 
@@ -57,6 +58,11 @@ sendBtn.addEventListener("click",
                 ${fullName} - 
                 ${reasoningInput.value !== "other" ? capitalize(reasoningInput.value) : "Unknown"} Inquiry
             `;
+
+            // ensure user message ends with punctuation
+            if (!/[.!?]/.test(messageInput.value[messageInput.value.length-1])) {
+                messageInput.value += ".";
+            }
 
             // Body for the automated Email.
             // Contains all the info provided by the user, in a professional structure.
@@ -98,6 +104,7 @@ sendBtn.addEventListener("click",
             emptyRequiredInputs.forEach(
                 (inputField) => {
                     inputField.style.border = "2px solid #ff3131";
+                    inputField.style.backgroundColor = "#fff3f3";
                 }
             );
 
