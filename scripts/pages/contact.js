@@ -25,25 +25,47 @@ sendBtn.addEventListener("click",
         // ensuring no required inputs are empty
         if (requiredInputValues.every(value => value !== "")) {
 
+            // storing capitalised names together, since its used in subject and body
+            let fullName = `${capitalize(firstNameInput.value)} ${capitalize(lastNameInput.value)}`;
+
             // Subject for the automated Email
             let emailSubject = `
                 Website form - 
-                ${capitalize(firstNameInput.value)} ${capitalize(lastNameInput.value)} - 
+                ${fullName} - 
                 ${reasoningInput.value !== "other" ? capitalize(reasoningInput.value) : "Unknown"} Inquiry
             `;
 
             // Body for the automated Email.
             // Contains all the info provided by the user, in a professional structure.
-            let emailBody = ``;
+            let emailBody = `
+                Hi Russell,%0A
+                %0A
+                I am contacting you regarding ${
+                    reasoningInput.value !== "other" 
+                    ? `a ${reasoningInput.value}` 
+                    : "<specify contact reasoning here>"
+                },%0A
+                %0A
+                ${capitalize(messageInput.value)}%0A
+
+                ${phoneNumberInput.value !== "" ? `%0AMy phone number: ${phoneNumberInput.value.replace("+", "%2b")}%0A` : ""}
+                %0A
+                Thank you in advance,%0A
+                ${fullName}.
+            `;
 
             // Create email with given subject and body, and open in a new tab
-            // Use regex to prevent: more than one space at a time; space at start of subject
+            // Use regex to prevent: more than one space at a time; and space at start of strings
             window.open(
                 `mailto:plumbbusiness101@gmail.com?subject=${
                     emailSubject
                     .replace(/\s+/g, " ")
                     .replace(/^\s/, "")
-                }&body=${emailBody}`
+                }&body=${
+                    emailBody
+                    .replace(/\s{2,}/g, "")
+                    .replace(/^\s/, "")
+                }`
                 , "_blank"
             );
         } 
