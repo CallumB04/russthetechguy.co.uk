@@ -47,7 +47,35 @@
     </nav>
 
     <main id="main">
-        
+        <h1 id="header">Contact Us</h1>
+        <p id="description">
+            Fill out this contact form and hit <strong>SEND</strong>.<br>
+            You will be redirected to your email with a prestructured message,
+            ready to send right away!
+        </p>
+
+        <div id="contact-form">
+            <div id="form-wrapper">
+                <div id="form-wrapper-left">
+                    <input type="text" class="form-input" id="fname-input" placeholder="First name" required/>
+                    <input type="text" class="form-input" id="lname-input" placeholder="Last name" required/>
+                    <input type="tel" class="form-input" id="phone-input" placeholder="Phone number (optional)"/>
+
+                    <select class="form-input" id="reasoning-input" required>
+                        <option value="">-- Please select your contact reasoning --</option>
+                        <option value="repair">Repair</option>
+                        <option value="return">Return / Refund</option>
+                        <option value="warranty">Warranty</option>
+                        <option value="other">Other (please specify in message)</option>
+                    </select>
+                </div>
+                <div id="form-wrapper-right">
+                    <textarea type="text" class="form-input" id="message-input" placeholder="Your message..." required></textarea>
+                </div>
+            </div>
+
+            <div id="send-button">Send</div>
+        </div>
     </main>
 
     <footer id="footer">

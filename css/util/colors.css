@@ -3,8 +3,8 @@
 :root {
     --text-color: #1a1a1a;
 
-    --bg-color: #fbfcfb;
-    --bg-color-dark: #eeeeee;
+    --bg-color: #fafdfa;
+    --bg-color-dark: #fbfcfb;
     --bg-gradient: linear-gradient(to bottom right, var(--bg-color), var(--bg-color-dark));
 
     --highlight-color: #c2e3f5;

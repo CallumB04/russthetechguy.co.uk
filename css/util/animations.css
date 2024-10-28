@@ -33,3 +33,39 @@
         opacity: 0;
     }
 }
+
+@property --angle {
+	syntax: "<angle>";
+	initial-value: 0deg;
+	inherits: false;
+}
+
+@keyframes spin {
+	0% {
+		--angle: 0deg;
+	}
+    20% {
+        --angle: 75deg;
+    }
+    25% {
+        --angle: 90deg;
+    }
+    30% {
+        --angle: 105deg;
+    }
+    50% {
+        --angle: 180deg;
+    }
+    70% {
+        --angle: 255deg;
+    }
+    75% {
+        --angle: 270deg;
+    }
+    80% {
+        --angle: 285deg;
+    }
+	100% {
+		--angle: 360deg;
+	}
+}
