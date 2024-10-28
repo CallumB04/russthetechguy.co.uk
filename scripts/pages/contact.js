@@ -58,6 +58,11 @@ sendBtn.addEventListener("click",
                 ${reasoningInput.value !== "other" ? capitalize(reasoningInput.value) : "Unknown"} Inquiry
             `;
 
+            // ensure user message ends with punctuation
+            if (!/[.!?]/.test(messageInput.value[messageInput.value.length-1])) {
+                messageInput.value += ".";
+            }
+
             // Body for the automated Email.
             // Contains all the info provided by the user, in a professional structure.
             let emailBody = `
