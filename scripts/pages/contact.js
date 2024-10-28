@@ -102,6 +102,16 @@ sendBtn.addEventListener("click",
             );
 
             emptyFieldsWarning.style.display = "block";
-            window.scroll(0, getVerticalOffset(emptyFieldsWarning) - 75); // scrolling warning into view
+
+            /* scroll warning into view */
+
+            // PC - scrolls to top of page
+            if (window.matchMedia("(orientation: landscape)").matches){
+                window.scroll(0, 0); 
+            } 
+            // Phone - scrolls to slightly above warning message
+            else {
+                window.scroll(0, getVerticalOffset(emptyFieldsWarning) - 75)
+            }
         }
 });
