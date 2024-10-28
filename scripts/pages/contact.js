@@ -97,7 +97,7 @@ sendBtn.addEventListener("click",
         else {
             emptyRequiredInputs.forEach(
                 (inputField) => {
-                    inputField.style.border = "1px solid #ff3131";
+                    inputField.style.border = "2px solid #ff3131";
                 }
             );
 
@@ -111,7 +111,7 @@ sendBtn.addEventListener("click",
             } 
             // Phone - scrolls to slightly above warning message
             else {
-                window.scroll(0, getVerticalOffset(emptyFieldsWarning) - 75)
+                window.scroll(0, getVerticalOffset(emptyFieldsWarning) - 75);
             }
         }
 });
