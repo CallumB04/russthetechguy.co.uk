@@ -1,5 +1,9 @@
 /* Styles specifically for the contact page (contact.html) */
 
+:root {
+    --warning-color: #aa2626;
+}
+
 #header {
     padding-top: 40px;
     text-align: center;
@@ -14,6 +18,43 @@
     max-width: min(70vw, 45ch);
     margin: 0 auto;
     padding-top: 10px;
+}
+
+#empty-fields-warning {
+    width: 85%;
+    max-width: 500px;
+    height: 45px;
+    margin: 0 auto;
+    position: relative;
+    display: none;
+}
+
+#caution-symbol-wrapper, #text-wrapper {
+    border: 2px solid var(--warning-color);
+    height: calc(0.6vw + 55px);
+    position: absolute;
+    top: calc(0.6vw + 10px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--warning-color);
+}
+
+#caution-symbol-wrapper {
+    width: calc(20% - 1.5vw);
+    border-radius: 8px 0 0 8px;
+    font-size: calc(0.34vw + 1.3rem);
+}
+
+#text-wrapper {
+    width: 82%;
+    left: calc(20% - 1.5vw);
+    border-left: none;
+    border-radius: 0 8px 8px 0;
+    font-size: calc(0.35vw + 0.75rem);
+    font-style: italic;
 }
 
 #contact-form {
@@ -72,32 +113,51 @@
     height: 60px;
     margin: 70px auto 0 auto;
     font-size: calc(0.12vw + 1.5rem);
-    font-style: italic;
     background-color: var(--highlight-color);
     border: none;
     border-radius: 12px;
-    font-family: Lato;
+    font-family: "League spartan";
+    text-transform: uppercase;
+    font-weight: bold;
     position: relative;
     text-align: center;
-    padding-top: 15px;
+    padding-top: calc(22px - 0.25vw);
     transition: background-color 0.5s;
 }
 
-#send-button::before {
+#send-button::before, #send-button::after {
     content: "";
     position: absolute;
     height: 100%;
     width: 100%;
-    background: conic-gradient(from var(--angle), var(--text-color) 8%, var(--bg-color) 8%);
+    translate: -50% -50%;
+    border-radius: 14px;
+}
+
+#send-button::before {
     top: 50%;
     left: 50%;
-    translate: -50% -50%;
-    z-index: -1;
-    padding: 3px;
-    border-radius: 14px;
+    background: conic-gradient(
+        from var(--angle),
+        var(--text-color) 2%,
+        transparent 2%,
+        transparent 52%,
+        var(--text-color) 52%,
+        var(--text-color) 54%,
+        transparent 54% 
+        );
+    padding: 4px;
     animation: 4s spin linear infinite;
     opacity: 0;
     transition: opacity 1s;
+    z-index: -1;
+}
+
+#send-button::after {
+    top: 57%;
+    left: 51.25%;
+    background-color: var(--mobile-dropdown-bg-color);
+    z-index: -2;
 }
 
 #send-button:hover {
@@ -109,7 +169,13 @@
     opacity: 1;
 }
 
+
+
 @media (orientation: portrait) and (max-width: 650px) {
+    #empty-fields-warning {
+        margin-top: 10px;
+        margin-bottom: 55px;
+    }
     #contact-form {
         margin: 40px auto 70px auto;
     }
@@ -122,5 +188,9 @@
     #send-button {
         width: 100%;
         margin: 30px auto 0 auto;
+    }
+
+    .form-input, #reasoning-input {
+        font-size: 1rem;
     }
 }

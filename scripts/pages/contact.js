@@ -1,5 +1,7 @@
 /* Functions specifically for the contact page (contact.html) */
 
+const emptyFieldsWarning = document.getElementById("empty-fields-warning");
+
 const firstNameInput = document.getElementById("fname-input");
 const lastNameInput = document.getElementById("lname-input");
 const phoneNumberInput = document.getElementById("phone-input");
@@ -11,19 +13,40 @@ const sendBtn = document.getElementById("send-button");
 // function to capitalise first letter of a string
 const capitalize = (value) => String(value[0]).toUpperCase() + String(value).slice(1);
 
+// function to get offset of element respective to the page
+const getVerticalOffset = (element) => {
+    let rect = element.getBoundingClientRect();
+    return rect.top + window.scrollY;
+};
+
 sendBtn.addEventListener("click", 
     () => {
         
         // Array for all inputs that need an entered value
-        let requiredInputValues = [
-            firstNameInput.value, 
-            lastNameInput.value, 
-            reasoningInput.value, 
-            messageInput.value
+        let requiredInputFields = [
+            firstNameInput, 
+            lastNameInput, 
+            reasoningInput, 
+            messageInput
         ];
 
+        // reset all input field styling values
+        requiredInputFields.forEach(
+            (inputField) => {
+                inputField.style.border = "1px solid black";
+            }
+        )
+
+        // hiding empty fields warning incase contact form is now viable
+        emptyFieldsWarning.style.display = "none";
+
+        // array for all required inputs that are empty 
+        let emptyRequiredInputs = requiredInputFields.filter(
+            (inputField) => inputField.value === ""
+        ); 
+            
         // ensuring no required inputs are empty
-        if (requiredInputValues.every(value => value !== "")) {
+        if (emptyRequiredInputs.length === 0) {
 
             // storing capitalised names together, since its used in subject and body
             let fullName = `${capitalize(firstNameInput.value)} ${capitalize(lastNameInput.value)}`;
@@ -70,8 +93,25 @@ sendBtn.addEventListener("click",
             );
         } 
         
-        // if required input is empty, alert user
+        // notify user of all empty required input fields and display warning
         else {
-            alert("Please fill in all required input fields!");
+            emptyRequiredInputs.forEach(
+                (inputField) => {
+                    inputField.style.border = "2px solid #ff3131";
+                }
+            );
+
+            emptyFieldsWarning.style.display = "block";
+
+            /* scroll warning into view */
+
+            // PC - scrolls to top of page
+            if (window.matchMedia("(orientation: landscape)").matches){
+                window.scroll(0, 0); 
+            } 
+            // Phone - scrolls to slightly above warning message
+            else {
+                window.scroll(0, getVerticalOffset(emptyFieldsWarning) - 75);
+            }
         }
 });
