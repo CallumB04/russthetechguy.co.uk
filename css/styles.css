@@ -167,6 +167,37 @@ body {
     min-height: 100vh;
 }
 
+.footer-page-header {
+    font-size: calc(1.8vw + 2.2rem);
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-page-content {
+    text-align: center;
+    width: 80ch;
+    max-width: 85vw;
+    margin: 0 auto;
+    padding-bottom: 85px;
+    
+
+}
+
+.footer-page-subheading {
+    margin-top: 20px;
+    padding-bottom: 8px;
+    padding-top: 20px;
+    font-size: calc(1vw + 1rem);
+    border-top: 1px solid var(--text-color);
+    font-family: Lato;
+}
+
+.footer-page-text {
+    font-size: calc(0.5vw + 0.8rem);
+    margin-top: 10px;
+    font-family: "League spartan";
+}
+
 #footer {
     width: 100%;
     min-height: 320px;
