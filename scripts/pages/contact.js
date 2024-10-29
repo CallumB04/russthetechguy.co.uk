@@ -86,7 +86,7 @@ sendBtn.addEventListener("click",
             // Create email with given subject and body, and open in a new tab
             // Use regex to prevent: more than one space at a time; and space at start of strings
             window.open(
-                `mailto:plumbbusiness101@gmail.com?subject=${
+                `mailto:contact@russthetechguy.com?subject=${
                     emailSubject
                     .replace(/\s+/g, " ")
                     .replace(/^\s/, "")
