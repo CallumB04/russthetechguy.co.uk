@@ -196,6 +196,12 @@ body {
     font-size: calc(0.4vw + 0.85rem);
     margin-top: 10px;
     font-family: "League spartan";
+    line-height: calc(0.7vw + 0.95rem);
+    color: #333;
+}
+
+.footer-page-text > strong {
+    color: var(--text-color);
 }
 
 #footer {
