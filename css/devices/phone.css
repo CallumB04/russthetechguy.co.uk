@@ -29,6 +29,10 @@
     #dropdown-menu .socials {
         font-size: 2.2rem;
     }
+    
+    .footer-page-header {
+        padding-bottom: 5px;
+    }
 }
 
 /* Landscape on mobile devices */

@@ -171,6 +171,7 @@ body {
     font-size: calc(1.8vw + 2.2rem);
     text-align: center;
     margin-top: 40px;
+    padding-bottom: 20px;
     font-family: Lato;
 }
 
@@ -180,8 +181,6 @@ body {
     max-width: 85vw;
     margin: 0 auto;
     padding-bottom: 85px;
-    
-
 }
 
 .footer-page-subheading {
