@@ -185,7 +185,7 @@ body {
 
 .footer-page-subheading {
     margin-top: 20px;
-    padding-bottom: 8px;
+    padding-bottom: 20px;
     padding-top: 20px;
     font-size: calc(1.2vw + 0.95rem);
     border-top: 1px solid var(--text-color);
@@ -205,8 +205,17 @@ body {
 }
 
 .footer-page-text > li {
+    max-width: 80vw;
     width: max-content;
     margin: 0 auto;
+}
+
+.footer-page-text > a {
+    color: var(--text-color);
+}
+
+.footer-page-text > a:hover {
+    color: var(--highlight-color-dark);
 }
 
 #footer {
