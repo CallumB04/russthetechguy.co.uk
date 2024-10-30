@@ -167,6 +167,57 @@ body {
     min-height: 100vh;
 }
 
+.footer-page-header {
+    font-size: calc(1.8vw + 2.2rem);
+    text-align: center;
+    margin-top: 40px;
+    padding-bottom: 20px;
+    font-family: Lato;
+}
+
+.footer-page-content {
+    text-align: center;
+    width: 80ch;
+    max-width: 85vw;
+    margin: 0 auto;
+    padding-bottom: 85px;
+}
+
+.footer-page-subheading {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: calc(1.2vw + 0.95rem);
+    border-top: 1px solid var(--text-color);
+    font-family: Lato;
+}
+
+.footer-page-text {
+    font-size: calc(0.4vw + 0.85rem);
+    margin-top: 10px;
+    font-family: "League spartan";
+    line-height: calc(0.7vw + 0.95rem);
+    color: #333;
+}
+
+.footer-page-text > strong {
+    color: var(--text-color);
+}
+
+.footer-page-text > li {
+    max-width: 80vw;
+    width: max-content;
+    margin: 0 auto;
+}
+
+.footer-page-text > a {
+    color: var(--text-color);
+}
+
+.footer-page-text > a:hover {
+    color: var(--highlight-color-dark);
+}
+
 #footer {
     width: 100%;
     min-height: 320px;
