@@ -3,19 +3,23 @@
 const activeListingsDiv = document.getElementById("active-listings");
 
 // array of items to be shown as active listings in the shop
+
+/* {
+    file: "test1.jpg",
+    name: "Test Item 1",
+    price: "13.99",
+    purchaseLink: "https://google.com"
+},
+{
+    file: "test2.jpg",
+    name: "Test Item 2",
+    price: "19.99",
+    purchaseLink: "https://youtube.com"
+}
+*/
+
 const activeListingItems = [
-    {
-        file: "test1.jpg",
-        name: "Test Item 1",
-        price: "13.99",
-        purchaseLink: "https://google.com"
-    },
-    {
-        file: "test2.jpg",
-        name: "Test Item 2",
-        price: "19.99",
-        purchaseLink: "https://youtube.com"
-    }
+    
 ];
 
 
