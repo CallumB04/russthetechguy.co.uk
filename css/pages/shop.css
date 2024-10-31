@@ -1,1 +1,26 @@
 /* Styles specifically for the shop page (shop.html) */
+
+#header {
+    padding-top: 40px;
+    text-align: center;
+    font-size: calc(1.6vw + 1.7rem);
+    font-family: Lato;
+}
+
+#description {
+    font-family: "League Spartan";
+    text-align: center;
+    font-size: calc(0.6vw + 0.7rem);
+    font-style: italic;
+    max-width: min(70vw, 45ch);
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+#description > a {
+    color: var(--text-color);
+}
+
+#description > a:hover {
+    color: var(--highlight-color-dark);
+}
