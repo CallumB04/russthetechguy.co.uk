@@ -15,7 +15,7 @@
 body {
     background: var(--bg-gradient);
     color: var(--text-color);
-    font-family: Reforma;
+    font-family: Lato;
 }
 
 ::-webkit-scrollbar {
