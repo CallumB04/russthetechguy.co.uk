@@ -208,6 +208,7 @@ body {
     max-width: 80vw;
     width: max-content;
     margin: 0 auto;
+    padding-bottom: 5px;
 }
 
 .footer-page-text > a {
