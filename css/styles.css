@@ -31,7 +31,7 @@ body {
 }
 
 .number {
-    font-family: Lato;
+    font-family: "League Spartan";
 }
 
 #navbar {
@@ -248,23 +248,24 @@ body {
 }
 
 .footer-section-content {
-    padding-top: 15px;
+    padding-top: 20px;
     padding-left: 3px;
     text-align: center;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 5px;
+    row-gap: calc(1.1rem - 0.35vw);
 }
 
 .footer-section-content-item {
-    font-family: Reforma-Blanca;
-    font-size: 1rem;
+    font-family: "League Spartan";
+    font-size: calc(1.15rem - 0.03vw);
     color: var(--bg-color);
     text-decoration: none;
-    font-weight: 0;
+    font-weight: 300;
     width: fit-content;
+    line-height: 1.4rem;
 }
 
 .footer-section-content > a:hover {
