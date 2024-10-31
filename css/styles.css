@@ -132,13 +132,14 @@ body {
     font-size: 1.2rem;
     padding: 6px;
     color: var(--text-color);
+    border-radius: 6px;
 }
 
 #dropdown-menu .dropdown-option:hover {
     cursor: pointer;
     background-color: var(--mobile-dropdown-bg-color);
-    font-size: 1.25rem;
-    transition: font-size 0.1s;
+    font-size: 1.3rem;
+    transition: font-size 0.15s, background-color 0.4s;
 }
 
 #dropdown-menu #dropdown-socials-wrapper {
