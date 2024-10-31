@@ -50,6 +50,16 @@ legend {
     font-family: Lato;
 }
 
+.shop-disclaimer {
+    color: #999;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: calc(1vw + 15px);
+    font-weight: 400;
+    font-size: calc(0.5vw + 0.9rem);
+    width: 70vw;
+}
+
 .shop-item {
     width: calc(8vw + 120px);
     height: calc(8vw + 120px);
