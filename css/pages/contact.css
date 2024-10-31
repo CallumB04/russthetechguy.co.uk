@@ -101,6 +101,7 @@
 #reasoning-input {
     margin-top: 40px;
     background-color: white;
+    color: var(--text-color);
 }
 
 #message-input {
