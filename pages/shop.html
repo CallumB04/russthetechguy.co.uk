@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 </head>
-<body id="body">
+<body id="body" onload="addShopItems()">
 
     <!-- Navigation bar -->
     <nav id="navbar">
@@ -50,9 +50,15 @@
         
         <h1 id="header">Shop</h1>
         <p id="description">
-            Here you will find any devices we are selling. Currently, all purchases are done
+            Here you will find any products we are selling. Currently, all purchases are done
             through contacting us directly. Find our contact form <a href="contact.html">HERE</a>.
         </p>
+
+        <div id="shop-section">
+            <fieldset id="active-listings">
+                <legend>Active Listings</legend>
+            </fieldset>
+        </div>
 
     </main>
 
