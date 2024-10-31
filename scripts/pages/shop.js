@@ -26,6 +26,15 @@ const activeListingItems = [
 // Function to add items into the shop from the array
 const addShopItems = () => {
 
+    // Add disclaimer if active listings is empty
+    if (!activeListingItems.length) {
+        activeListingsDiv.innerHTML += `
+            <h2 class="shop-disclaimer">
+                There are currently no items available for purchase...
+            </h2>
+        `
+    }
+
     for (const item of activeListingItems) {
         activeListingsDiv.innerHTML += `
             <div class="shop-item">
