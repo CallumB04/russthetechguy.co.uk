@@ -31,13 +31,16 @@
 
 .gallery-image {
     max-height: 325px;
-    max-width: 85vw;
+    min-width: 200px;
+    max-width: 350px;
+    object-fit: cover;
     border-radius: 5%;
 }
 
 @media (orientation: portrait) {
     .gallery-image {
-       max-height: 9999px;
-       max-width: min(80vw, 420px);
+        min-height: 200px;
+        max-height: 9999px;
+        max-width: min(80vw, 420px);
     }
 }
