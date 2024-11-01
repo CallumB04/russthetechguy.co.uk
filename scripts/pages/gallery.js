@@ -4,7 +4,7 @@
 const image_files = [
     "laptop-1.jpg", "motherboard-1.jpg", "phonerepair-1.jpg", "workshop-1.jpg", 
     "laptop-2.jpg", "motherboard-3.jpg", "pc-1.jpg", "pc-2.jpg", "pc-3.jpg", 
-    "pc-4.jpg", "pc-5.jpg", "ps4-1.jpg","motherboard-2.jpg"
+    "pc-4.jpg", "ps4-1.jpg","motherboard-2.jpg"
 ]; 
 
 const gallery = document.getElementById("gallery-section");
