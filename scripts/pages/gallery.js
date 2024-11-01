@@ -1,11 +1,12 @@
 /* Functions specifically for the gallery page (gallery.html) */
 
+// list of file names in the /gallery directory
 const image_files = [
-    "phone1-before.jpg", "phone1-after.jpg",
-      "laptop1-before.jpg", "laptop1-after.jpg",
-        "workshop.jpg",
-         "phonerepair1.jpg"
-        ]; // list of file names in the /gallery directory
+    "laptop-1.jpg", "motherboard-1.jpg", "phonerepair-1.jpg", "workshop-1.jpg", 
+    "laptop-2.jpg", "motherboard-3.jpg", "pc-1.jpg", "pc-2.jpg", "pc-3.jpg", 
+    "pc-4.jpg", "pc-5.jpg", "ps4-1.jpg","motherboard-2.jpg"
+]; 
+
 const gallery = document.getElementById("gallery-section");
 
 // function to load the html for the images
